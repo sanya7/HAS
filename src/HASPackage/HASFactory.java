@@ -8,13 +8,11 @@ public class HASFactory {
 	      }		
 	      if(applianceType.equalsIgnoreCase("HOME LIGHTS"))
 	      {
-	         return new HomeLights();
-	         
+	         return new HomeLights(); 
 	      } 
 	      else if(applianceType.equalsIgnoreCase("AIR CONDITIONER"))
 	      {
 	         return new AirConditioner();
-	         
 	      } 
 	      else if(applianceType.equalsIgnoreCase("WASHING MACHINE"))
 	      {
@@ -22,8 +20,7 @@ public class HASFactory {
 	      }
 	      else if(applianceType.equalsIgnoreCase("TV"))
 	      {
-	         return new TV();
-	         
+	         return new TV(); 
 	      } 
 	      else if(applianceType.equalsIgnoreCase("AUDIO SYSTEM"))
 	      {
