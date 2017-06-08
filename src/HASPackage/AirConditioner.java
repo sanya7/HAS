@@ -2,7 +2,7 @@ package HASPackage;
 
 public class AirConditioner implements HAS{
 
-	public void buttons(int flag)
+	public int buttons(int flag)
 	{
 		System.out.println("AIR CONDITIONER");
 		
@@ -16,5 +16,7 @@ public class AirConditioner implements HAS{
 			System.out.println("AIR CONDITIONER OFF!!");
 			flag = 0;
 		}
+		
+		return flag;
 	}
 }

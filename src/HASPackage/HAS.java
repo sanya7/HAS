@@ -2,5 +2,5 @@ package HASPackage;
 
 public interface HAS {
 	
-		void buttons(int flag);
+		int buttons(int flag);
 }

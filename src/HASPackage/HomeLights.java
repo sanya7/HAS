@@ -1,7 +1,7 @@
 package HASPackage;
 
 public class HomeLights implements HAS{
-	public void buttons(int flag)
+	public int buttons(int flag)
 	{
 		System.out.println("HOME LIGHTS");
 		
@@ -15,6 +15,8 @@ public class HomeLights implements HAS{
 			System.out.println("LIGHTS OFF!!");
 			flag = 0;
 		}
+		
+		return flag;
 	}
 
 }

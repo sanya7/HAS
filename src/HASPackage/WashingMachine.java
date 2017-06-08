@@ -1,7 +1,7 @@
 package HASPackage;
 
 public class WashingMachine implements HAS{
-	public void buttons(int flag)
+	public int buttons(int flag)
 	{
 		System.out.println("WASHING MACHINE");
 		
@@ -15,6 +15,8 @@ public class WashingMachine implements HAS{
 			System.out.println("WASHING MACHINE OFF!!");
 			flag = 0;
 		}
+		
+		return flag;
 	}
 
 }

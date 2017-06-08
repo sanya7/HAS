@@ -1,7 +1,7 @@
 package HASPackage;
 
 public class AudioSystem implements HAS{
-	public void buttons(int flag)
+	public int buttons(int flag)
 	{
 		System.out.println("AUDIO SYSTEM");
 		
@@ -15,17 +15,21 @@ public class AudioSystem implements HAS{
 			System.out.println("AUDIO SYSTEM OFF!!");
 			flag = 0;
 		}
+		
+		return flag;
 	}
 	
-	public void volumeup( int vol)
+	public int volumeup( int vol)
 	{
 		vol = vol + 1;
 		System.out.println("VOLUME UP :" +vol);
+		return vol;
 	}
 	
-	public void volumedown( int vol)
+	public int volumedown( int vol)
 	{
 		vol = vol - 1;
 		System.out.println("VOLUME DOWN :" +vol);
+		return vol;
 	}
 }

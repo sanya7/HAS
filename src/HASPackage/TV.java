@@ -1,7 +1,7 @@
 package HASPackage;
 
 public class TV implements HAS{
-	public void buttons(int flag)
+	public int buttons(int flag)
 	{
 		System.out.println("TV");
 		
@@ -15,29 +15,35 @@ public class TV implements HAS{
 			System.out.println("TV OFF!!");
 			flag = 0;
 		}
+		
+		return flag;
 	}
 
-	public void volumeup( int vol)
+	public int volumeup( int vol)
 	{
 		vol = vol + 1;
 		System.out.println("VOLUME UP :" +vol);
+		return vol;
 	}
 	
-	public void volumedown( int vol)
+	public int volumedown( int vol)
 	{
 		vol = vol - 1;
 		System.out.println("VOLUME DOWN :" +vol);
+		return vol;
 	}
 	
-	public void channelup( int channel)
+	public int channelup( int channel)
 	{
 		channel = channel + 1;
 		System.out.println("CHANNEL UP :" +channel);
+		return channel;
 	}
 	
-	public void channeldown( int channel)
+	public int channeldown( int channel)
 	{
 		channel = channel - 1;
 		System.out.println("CHANNEL DOWN :" +channel);
+		return channel;
 	}
 }
